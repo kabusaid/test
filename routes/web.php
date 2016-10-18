@@ -13,6 +13,8 @@ use App\Http\Requests\RegisterRequest;
 |
 */
 
+Route::resource('products', 'ProductController');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,3 +30,4 @@ Route::post('/register', function (RegisterRequest $request) {
 Route::get('/dashboard', function () {
     return view('welcome');
 });
+
